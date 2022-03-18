@@ -1,5 +1,10 @@
 # gitlab-docker
 
+## create environment(must)
+```
+export GITLAB_HOME=$(pwd)/gitlab
+```
+
 ## start gitlab
 ```
 docker-compose up -d
