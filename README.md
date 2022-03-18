@@ -1,17 +1,12 @@
 # gitlab-docker
 
-## create environment(must)
-```
-export GITLAB_HOME=$(pwd)/gitlab
-```
-
 ## start gitlab
 ```
 docker-compose up -d
 ```
 ### wait minimun 5 min to gitlab started
 
-## login
+## User login admin initial
 ### username: root
 ### password:
 ```
