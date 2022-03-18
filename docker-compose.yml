@@ -1,20 +1,20 @@
 version: '3.7'
 services:
-  web:
-    image: 'gitlab/gitlab-ce:latest'
+  gitlab:
+    image: gitlab/gitlab-ce:latest
     restart: always
-    hostname: 'localhost'
+    hostname: localhost
     container_name: gitlab-ce
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://localhost'
+        external_url http://localhost
     ports:
-      - '8080:80'
-      - '8443:443'
+      - 80:80
+      - 443:443
     volumes:
-      - '$GITLAB_HOME/config:/etc/gitlab'
-      - '$GITLAB_HOME/logs:/var/log/gitlab'
-      - '$GITLAB_HOME/data:/var/opt/gitlab'
+      - ./config:/etc/gitlab
+      - ./logs:/var/log/gitlab
+      - ./data:/var/opt/gitlab
     networks:
       - gitlab
   gitlab-runner:
@@ -22,10 +22,10 @@ services:
     container_name: gitlab-runner    
     restart: always
     depends_on:
-      - web
+      - gitlab
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - '$GITLAB_HOME/gitlab-runner:/etc/gitlab-runner'
+      - ./gitlab-runner:/etc/gitlab-runner
     networks:
       - gitlab
 
