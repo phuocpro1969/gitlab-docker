@@ -19,14 +19,19 @@ docker exec -it gitlab-ce grep 'Password:' /etc/gitlab/initial_root_password
 ```
 
 ## register runner
-for http
+### for http
 ```
 docker exec -it gitlab-runner gitlab-runner register --url "http://gitlab-ce" --clone-url "http://gitlab-ce"
 ```
 
-for https
+### for https
 ```
- docker exec -it gitlab-runner gitlab-runner register --url "https://learning-devops.tk" --clone-url "https://learning-devops.tk"
+docker exec -it gitlab-runner gitlab-runner register --url "https://learning-devops.tk" --clone-url "https://learning-devops.tk"
+```
+
+### default docker image
+```
+alpine:latest
 ```
 
 ## stop gitlab
