@@ -9,7 +9,7 @@ export GITLAB_HOME=$(pwd)/gitlab
 ```
 docker-compose up -d
 ```
-### wait 1 min to gitlab started
+### wait minimun 5 min to gitlab started
 
 ## login
 ### username: root
