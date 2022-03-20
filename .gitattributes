@@ -1,0 +1,2 @@
+*/gitlab/* filter=lfs diff=lfs merge=lfs -text
+gitlab/data/prometheus/data/wal/00000001 filter=lfs diff=lfs merge=lfs -text

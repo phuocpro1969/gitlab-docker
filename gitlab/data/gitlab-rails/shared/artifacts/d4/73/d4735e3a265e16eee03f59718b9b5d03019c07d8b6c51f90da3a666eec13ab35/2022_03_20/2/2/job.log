@@ -1,0 +1,121 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647771936:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image gliderlabs/herokuish:latest ...[0;m
+[0KStarting service postgres:9.6.16 ...[0;m
+[0KPulling docker image postgres:9.6.16 ...[0;m
+[0KUsing docker image sha256:cb2889ab0680ba518e0dc1bb5a09cbe23f1e5908d9e484daea3d34f5e092ec17 for postgres:9.6.16 with digest postgres@sha256:d6a6badb2b5b22de5e135490a217522cecc2ae90fe35b33290615827569310a1 ...[0;m
+[0KWaiting for services to be up and running...[0;m
+[0KPulling docker image gliderlabs/herokuish:latest ...[0;m
+[0KUsing docker image sha256:fe96602a2816d84d5d0f158df23febf6ee8c4cd5d29b97c3dc745debd8123745 for gliderlabs/herokuish:latest with digest gliderlabs/herokuish@sha256:e95b55607d40bc25f5bbe9218de3d65fa47b5d377d5d5e2f613ed101205c6f27 ...[0;m
+section_end:1647771972:prepare_executor[0Ksection_start:1647771972:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647771976:prepare_script[0Ksection_start:1647771976:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out 70df9f06 as main...[0;m
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647771977:get_sources[0Ksection_start:1647771977:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:fe96602a2816d84d5d0f158df23febf6ee8c4cd5d29b97c3dc745debd8123745 for gliderlabs/herokuish:latest with digest gliderlabs/herokuish@sha256:e95b55607d40bc25f5bbe9218de3d65fa47b5d377d5d5e2f613ed101205c6f27 ...[0;m
+[32;1m$ if [ -z ${KUBERNETES_PORT+x} ]; then # collapsed multi-line command[0;m
+[32;1m$ export DATABASE_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:5432/${POSTGRES_DB}"[0;m
+[32;1m$ cp -R . /tmp/app[0;m
+[32;1m$ /bin/herokuish buildpack test[0;m
+[1G-----> Node.js app detected
+       
+-----> Creating runtime environment
+       
+       NPM_CONFIG_LOGLEVEL=error
+       NPM_CONFIG_PRODUCTION=false
+       USE_YARN_CACHE=true
+       NODE_ENV=test
+       NODE_MODULES_CACHE=true
+       NODE_VERBOSE=false
+       
+-----> Installing binaries
+       engines.node (package.json):  unspecified
+       engines.npm (package.json):   unspecified (use default)
+       engines.yarn (package.json):  unspecified (use default)
+       
+       Resolving node version 14.x...
+       Downloading and installing node 14.19.1...
+       Using default npm version: 6.14.16
+       Resolving yarn version 1.22.x...
+       Downloading and installing yarn (1.22.18)
+       Installed yarn 1.22.18
+       
+-----> Installing dependencies
+       Installing node modules (yarn.lock)
+       yarn install v1.22.18
+       [1/4] Resolving packages...
+       [2/4] Fetching packages...
+       [3/4] Linking dependencies...
+       warning " > @testing-library/user-event@12.8.3" has unmet peer dependency "@testing-library/dom@>=7.21.4".
+       warning "react-scripts > @typescript-eslint/eslint-plugin > tsutils@3.20.0" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+       [4/4] Building fresh packages...
+       Done in 47.60s.
+       
+-----> Build
+       Running build (yarn)
+       yarn run v1.22.18
+       $ react-scripts build
+       Creating an optimized production build...
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+       Compiled successfully.
+       
+       File sizes after gzip:
+       
+         41.33 KB  build/static/js/2.d0eb047a.chunk.js
+         1.63 KB   build/static/js/3.a6e4d959.chunk.js
+         1.17 KB   build/static/js/runtime-main.31ee9be5.js
+         689 B     build/static/css/main.15db5ee1.chunk.css
+         552 B     build/static/js/main.d1490275.chunk.js
+       
+       The project was built assuming it is hosted at /.
+       You can control this with the homepage field in your package.json.
+       
+       The build folder is ready to be deployed.
+       You may serve it with a static server:
+       
+         yarn global add serve
+         serve -s build
+       
+       Find out more about deployment here:
+       
+         https://cra.link/deployment
+       
+       Done in 10.02s.
+       
+-----> Pruning devDependencies
+       Skipping because NODE_ENV is 'test'
+       
+-----> Caching build
+       - yarn cache
+       
+-----> Build succeeded!
+ !     Unmet dependencies don't fail yarn install but may cause runtime issues
+       https://github.com/npm/npm/issues/7494
+
+yarn run v1.22.18
+$ react-scripts test
+PASS src/App.test.js
+  ✓ renders learn react link (55 ms)
+
+  console.log
+    test
+
+      at Object.<anonymous> (src/App.test.js:6:11)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.608 s
+Ran all test suites.
+Done in 3.58s.
+section_end:1647772052:step_script[0Ksection_start:1647772052:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647772052:cleanup_file_variables[0K[32;1mJob succeeded[0;m

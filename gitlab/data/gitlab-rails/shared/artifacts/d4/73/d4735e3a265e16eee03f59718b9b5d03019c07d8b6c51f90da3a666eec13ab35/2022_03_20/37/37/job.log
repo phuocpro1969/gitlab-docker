@@ -1,0 +1,70 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647782188:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image curlimages/curl ...[0;m
+[0KStarting service docker:20.10.13-dind ...[0;m
+[0KPulling docker image docker:20.10.13-dind ...[0;m
+[0KUsing docker image sha256:12be8f658512ce5ca4f7e20a59a0ed17f592a41171a46ffd45888643b83eb598 for docker:20.10.13-dind with digest docker@sha256:e37536394e82073384d22a24a3514496eeee2890c823cfb94628ced9ae387a01 ...[0;m
+[0KStarting service phuocpro1969/mywebsite:4 ...[0;m
+[0KPulling docker image phuocpro1969/mywebsite:4 ...[0;m
+[0KUsing docker image sha256:b5b03b87f189e65062ec5d3cceabf6bb32333d19f066ecb71b3693dfb69ffdfa for phuocpro1969/mywebsite:4 with digest phuocpro1969/mywebsite@sha256:f3aa5c6e255fef6a1a5b63ba651679e4244c2211246b0e94badfc5e02b3e0193 ...[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-b889c1c6e55fd215-docker-0 probably didn't start properly.
+
+Health check error:
+service "runner-8g8vflme-project-2-concurrent-0-b889c1c6e55fd215-docker-0-wait-for-service" timeout
+
+Health check container logs:
+
+
+Service container logs:
+2022-03-20T13:16:30.054568962Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T13:16:30.110703712Z ...........++++
+2022-03-20T13:16:30.236908530Z ...........................++++
+2022-03-20T13:16:30.237504768Z e is 65537 (0x010001)
+2022-03-20T13:16:30.260045933Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T13:16:30.473280110Z ..............................................++++
+2022-03-20T13:16:30.518293613Z ......++++
+2022-03-20T13:16:30.518319036Z e is 65537 (0x010001)
+2022-03-20T13:16:30.572234997Z Signature ok
+2022-03-20T13:16:30.572268724Z subject=CN = docker:dind server
+2022-03-20T13:16:30.572491395Z Getting CA Private Key
+2022-03-20T13:16:30.592609335Z /certs/server/cert.pem: OK
+2022-03-20T13:16:30.597629470Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T13:16:30.921784510Z ........................................................++++
+2022-03-20T13:16:31.056907108Z .....................++++
+2022-03-20T13:16:31.056944614Z e is 65537 (0x010001)
+2022-03-20T13:16:31.103688205Z Signature ok
+2022-03-20T13:16:31.103714540Z subject=CN = docker:dind client
+2022-03-20T13:16:31.103882534Z Getting CA Private Key
+2022-03-20T13:16:31.120087942Z /certs/client/cert.pem: OK
+2022-03-20T13:16:31.229536492Z time="2022-03-20T13:16:31.226943894Z" level=info msg="Starting up"
+2022-03-20T13:16:31.229584746Z time="2022-03-20T13:16:31.229399259Z" level=warning msg="could not change group /var/run/docker.sock to docker: group docker not found"
+2022-03-20T13:16:31.229686645Z failed to load listeners: can't create unix socket /var/run/docker.sock: device or resource busy
+
+[0;33m*********[0;m
+
+[0KPulling docker image curlimages/curl ...[0;m
+[0KUsing docker image sha256:dcc70eeb4d1b9d8e2ac68bd516779fca294f6776ab4d8907d5f19ecacef95d83 for curlimages/curl with digest curlimages/curl@sha256:28de0ecf272de51313e5b522ed51c54d44c9d4eed6ce050ba83f0c599182e619 ...[0;m
+section_end:1647782223:prepare_executor[0Ksection_start:1647782223:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647782223:prepare_script[0Ksection_start:1647782223:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out 7ad8af28 as main...[0;m
+Removing build/
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647782225:get_sources[0Ksection_start:1647782225:download_artifacts[0K[0K[36;1mDownloading artifacts[0;m[0;m
+[32;1mDownloading artifacts for build website (22)...[0;m
+Downloading artifacts from coordinator... ok      [0;m  id[0;m=22 responseStatus[0;m=200 OK token[0;m=Q5x82zy9
+section_end:1647782226:download_artifacts[0Ksection_start:1647782226:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:dcc70eeb4d1b9d8e2ac68bd516779fca294f6776ab4d8907d5f19ecacef95d83 for curlimages/curl with digest curlimages/curl@sha256:28de0ecf272de51313e5b522ed51c54d44c9d4eed6ce050ba83f0c599182e619 ...[0;m
+[32;1m$ curl http://website/version.html | grep $APP_VERSION[0;m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     04
+100     2  100     2    0     0   1133      0 --:--:-- --:--:-- --:--:--  2000
+section_end:1647782226:step_script[0Ksection_start:1647782226:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647782227:cleanup_file_variables[0K[32;1mJob succeeded[0;m

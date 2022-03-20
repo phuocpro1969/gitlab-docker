@@ -1,0 +1,22 @@
+2022-03-20_09:28:41.37641 LOG:  starting PostgreSQL 12.7 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2022-03-20_09:28:41.37971 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2022-03-20_09:28:41.40322 LOG:  database system was shut down at 2022-03-20 09:28:39 GMT
+2022-03-20_09:28:41.41146 LOG:  database system is ready to accept connections
+2022-03-20_09:28:44.91993 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-03-20_09:28:44.92003 FATAL:  Peer authentication failed for user "gitlab"
+2022-03-20_09:28:44.92004 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-03-20_09:28:45.05102 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-03-20_09:28:45.05109 FATAL:  Peer authentication failed for user "gitlab"
+2022-03-20_09:28:45.05110 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-03-20_09:28:45.16355 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-03-20_09:28:45.16360 FATAL:  Peer authentication failed for user "gitlab"
+2022-03-20_09:28:45.16360 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-03-20_09:28:45.54159 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-03-20_09:28:45.54165 FATAL:  Peer authentication failed for user "gitlab"
+2022-03-20_09:28:45.54165 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-03-20_09:28:45.76310 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-03-20_09:28:45.76315 FATAL:  Peer authentication failed for user "gitlab"
+2022-03-20_09:28:45.76315 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-03-20_13:28:30.43791 ERROR:  duplicate key value violates unique constraint "namespace_aggregation_schedules_pkey"
+2022-03-20_13:28:30.43887 DETAIL:  Key (namespace_id)=(1) already exists.
+2022-03-20_13:28:30.43888 STATEMENT:  /*application:sidekiq,correlation_id:905f567a91129c59cff77609c749744f,jid:d53426c40402bc870a5d8e84,endpoint_id:Namespaces::ScheduleAggregationWorker,db_config_name:main*/ INSERT INTO "namespace_aggregation_schedules" ("namespace_id") VALUES (1) RETURNING "namespace_id"

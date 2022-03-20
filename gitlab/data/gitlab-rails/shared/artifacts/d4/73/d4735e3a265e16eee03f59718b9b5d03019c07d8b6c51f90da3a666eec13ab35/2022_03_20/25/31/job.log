@@ -1,0 +1,95 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647780826:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image amazon/aws-cli:2.4.11 ...[0;m
+[0KStarting service docker:20.10.13-dind ...[0;m
+[0KPulling docker image docker:20.10.13-dind ...[0;m
+[0KUsing docker image sha256:12be8f658512ce5ca4f7e20a59a0ed17f592a41171a46ffd45888643b83eb598 for docker:20.10.13-dind with digest docker@sha256:e37536394e82073384d22a24a3514496eeee2890c823cfb94628ced9ae387a01 ...[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-c96b9a9c4ee049ab-docker-0 probably didn't start properly.
+
+Health check error:
+service "runner-8g8vflme-project-2-concurrent-0-c96b9a9c4ee049ab-docker-0-wait-for-service" timeout
+
+Health check container logs:
+
+
+Service container logs:
+2022-03-20T12:53:47.958584743Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:53:48.246552721Z .....................................................++++
+2022-03-20T12:53:48.323293203Z .............++++
+2022-03-20T12:53:48.323893874Z e is 65537 (0x010001)
+2022-03-20T12:53:48.345619264Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:53:49.093097245Z .................................................................................................................................................................++++
+2022-03-20T12:53:49.160934519Z ..............++++
+2022-03-20T12:53:49.161646263Z e is 65537 (0x010001)
+2022-03-20T12:53:49.196523314Z Signature ok
+2022-03-20T12:53:49.196557682Z subject=CN = docker:dind server
+2022-03-20T12:53:49.196724644Z Getting CA Private Key
+2022-03-20T12:53:49.211647761Z /certs/server/cert.pem: OK
+2022-03-20T12:53:49.216217230Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:53:49.357751109Z ...............................++++
+2022-03-20T12:53:49.482752183Z ...........................++++
+2022-03-20T12:53:49.483323087Z e is 65537 (0x010001)
+2022-03-20T12:53:49.513610298Z Signature ok
+2022-03-20T12:53:49.513650033Z subject=CN = docker:dind client
+2022-03-20T12:53:49.513813154Z Getting CA Private Key
+2022-03-20T12:53:49.527922644Z /certs/client/cert.pem: OK
+2022-03-20T12:53:49.618071437Z time="2022-03-20T12:53:49.617807140Z" level=info msg="Starting up"
+2022-03-20T12:53:49.620201494Z time="2022-03-20T12:53:49.619939030Z" level=warning msg="could not change group /var/run/docker.sock to docker: group docker not found"
+2022-03-20T12:53:49.620227889Z failed to load listeners: can't create unix socket /var/run/docker.sock: device or resource busy
+
+[0;33m*********[0;m
+
+[0KPulling docker image amazon/aws-cli:2.4.11 ...[0;m
+[0KUsing docker image sha256:3e880fcd134b187fb3b4f61f3b9ba13d24df4a3189af2ea7774b71280970fe25 for amazon/aws-cli:2.4.11 with digest amazon/aws-cli@sha256:8effaed358d0a64920a57c697c6f9ddb779f02ead955401d3bc4f28cfaedf969 ...[0;m
+section_end:1647780860:prepare_executor[0Ksection_start:1647780860:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647780860:prepare_script[0Ksection_start:1647780860:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out 7ad8af28 as main...[0;m
+Removing build/
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647780861:get_sources[0Ksection_start:1647780861:download_artifacts[0K[0K[36;1mDownloading artifacts[0;m[0;m
+[32;1mDownloading artifacts for build website (22)...[0;m
+Downloading artifacts from coordinator... ok      [0;m  id[0;m=22 responseStatus[0;m=200 OK token[0;m=Q5x82zy9
+section_end:1647780862:download_artifacts[0Ksection_start:1647780862:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:3e880fcd134b187fb3b4f61f3b9ba13d24df4a3189af2ea7774b71280970fe25 for amazon/aws-cli:2.4.11 with digest amazon/aws-cli@sha256:8effaed358d0a64920a57c697c6f9ddb779f02ead955401d3bc4f28cfaedf969 ...[0;m
+[32;1m$ aws --version[0;m
+aws-cli/2.4.11 Python/3.8.8 Linux/5.4.0-1064-gcp docker/x86_64.amzn.2 prompt/off
+[32;1m$ aws s3 sync build s3://$AWS_S3_BUCKET --delete[0;m
+Completed 2.9 KiB/507.6 KiB (6.5 KiB/s) with 20 file(s) remainingupload: build/index.html to s3://learning-devops.tk-product/index.html
+Completed 2.9 KiB/507.6 KiB (6.5 KiB/s) with 19 file(s) remainingCompleted 4.0 KiB/507.6 KiB (4.6 KiB/s) with 19 file(s) remainingupload: build/static/js/2.d0eb047a.chunk.js.LICENSE.txt to s3://learning-devops.tk-product/static/js/2.d0eb047a.chunk.js.LICENSE.txt
+Completed 4.0 KiB/507.6 KiB (4.6 KiB/s) with 18 file(s) remainingCompleted 7.7 KiB/507.6 KiB (7.4 KiB/s) with 18 file(s) remainingupload: build/favicon.ico to s3://learning-devops.tk-product/favicon.ico
+Completed 7.7 KiB/507.6 KiB (7.4 KiB/s) with 17 file(s) remainingCompleted 8.9 KiB/507.6 KiB (8.4 KiB/s) with 17 file(s) remainingupload: build/static/css/main.15db5ee1.chunk.css to s3://learning-devops.tk-product/static/css/main.15db5ee1.chunk.css
+Completed 8.9 KiB/507.6 KiB (8.4 KiB/s) with 16 file(s) remainingCompleted 9.4 KiB/507.6 KiB (8.8 KiB/s) with 16 file(s) remainingupload: build/manifest.json to s3://learning-devops.tk-product/manifest.json
+Completed 9.4 KiB/507.6 KiB (8.8 KiB/s) with 15 file(s) remainingCompleted 14.6 KiB/507.6 KiB (13.7 KiB/s) with 15 file(s) remainingupload: build/logo192.png to s3://learning-devops.tk-product/logo192.png
+Completed 14.6 KiB/507.6 KiB (13.7 KiB/s) with 14 file(s) remainingCompleted 24.0 KiB/507.6 KiB (22.5 KiB/s) with 14 file(s) remainingupload: build/logo512.png to s3://learning-devops.tk-product/logo512.png
+Completed 24.0 KiB/507.6 KiB (22.5 KiB/s) with 13 file(s) remainingCompleted 24.1 KiB/507.6 KiB (22.5 KiB/s) with 13 file(s) remainingupload: build/robots.txt to s3://learning-devops.tk-product/robots.txt
+Completed 24.1 KiB/507.6 KiB (22.5 KiB/s) with 12 file(s) remainingCompleted 26.3 KiB/507.6 KiB (24.5 KiB/s) with 12 file(s) remainingupload: build/static/css/main.15db5ee1.chunk.css.map to s3://learning-devops.tk-product/static/css/main.15db5ee1.chunk.css.map
+Completed 26.3 KiB/507.6 KiB (24.5 KiB/s) with 11 file(s) remainingCompleted 27.3 KiB/507.6 KiB (25.4 KiB/s) with 11 file(s) remainingupload: build/asset-manifest.json to s3://learning-devops.tk-product/asset-manifest.json
+Completed 27.3 KiB/507.6 KiB (25.4 KiB/s) with 10 file(s) remainingCompleted 31.6 KiB/507.6 KiB (21.8 KiB/s) with 10 file(s) remainingupload: build/static/js/3.a6e4d959.chunk.js to s3://learning-devops.tk-product/static/js/3.a6e4d959.chunk.js
+Completed 31.6 KiB/507.6 KiB (21.8 KiB/s) with 9 file(s) remainingCompleted 41.0 KiB/507.6 KiB (28.0 KiB/s) with 9 file(s) remainingupload: build/static/js/3.a6e4d959.chunk.js.map to s3://learning-devops.tk-product/static/js/3.a6e4d959.chunk.js.map
+Completed 41.0 KiB/507.6 KiB (28.0 KiB/s) with 8 file(s) remainingCompleted 41.9 KiB/507.6 KiB (28.6 KiB/s) with 8 file(s) remainingupload: build/static/js/main.d1490275.chunk.js to s3://learning-devops.tk-product/static/js/main.d1490275.chunk.js
+Completed 41.9 KiB/507.6 KiB (28.6 KiB/s) with 7 file(s) remainingCompleted 48.7 KiB/507.6 KiB (32.8 KiB/s) with 7 file(s) remainingupload: build/static/media/gitlab.0bf46ba9.svg to s3://learning-devops.tk-product/static/media/gitlab.0bf46ba9.svg
+Completed 48.7 KiB/507.6 KiB (32.8 KiB/s) with 6 file(s) remainingCompleted 51.0 KiB/507.6 KiB (34.4 KiB/s) with 6 file(s) remainingupload: build/static/js/main.d1490275.chunk.js.map to s3://learning-devops.tk-product/static/js/main.d1490275.chunk.js.map
+Completed 51.0 KiB/507.6 KiB (34.4 KiB/s) with 5 file(s) remainingCompleted 51.0 KiB/507.6 KiB (34.2 KiB/s) with 5 file(s) remainingupload: build/version.html to s3://learning-devops.tk-product/version.html
+Completed 51.0 KiB/507.6 KiB (34.2 KiB/s) with 4 file(s) remainingCompleted 53.3 KiB/507.6 KiB (35.7 KiB/s) with 4 file(s) remainingupload: build/static/js/runtime-main.31ee9be5.js to s3://learning-devops.tk-product/static/js/runtime-main.31ee9be5.js
+Completed 53.3 KiB/507.6 KiB (35.7 KiB/s) with 3 file(s) remainingCompleted 65.5 KiB/507.6 KiB (43.7 KiB/s) with 3 file(s) remainingupload: build/static/js/runtime-main.31ee9be5.js.map to s3://learning-devops.tk-product/static/js/runtime-main.31ee9be5.js.map
+Completed 65.5 KiB/507.6 KiB (43.7 KiB/s) with 2 file(s) remainingCompleted 321.5 KiB/507.6 KiB (193.1 KiB/s) with 2 file(s) remainingCompleted 449.7 KiB/507.6 KiB (268.5 KiB/s) with 2 file(s) remainingupload: build/static/js/2.d0eb047a.chunk.js to s3://learning-devops.tk-product/static/js/2.d0eb047a.chunk.js
+Completed 449.7 KiB/507.6 KiB (268.5 KiB/s) with 1 file(s) remainingCompleted 507.6 KiB/507.6 KiB (245.1 KiB/s) with 1 file(s) remainingupload: build/static/js/2.d0eb047a.chunk.js.map to s3://learning-devops.tk-product/static/js/2.d0eb047a.chunk.js.map
+[32;1m$ curl $CI_ENVIRONMENT_URL | grep "React App"[0;m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  3020  100  3020    0     0   6613      0 --:--:-- --:--:-- --:--:--  6608
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/main.15db5ee1.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,a,i=r[0],c=r[1],l=r[2],f=0,s=[];f<i.length;f++)a=i[f],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,l||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var c=t[i];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,i=document.createElement("script");i.charset="utf-8",i.timeout=120,a.nc&&i.setAttribute("nonce",a.nc),i.src=function(e){return a.p+"static/js/"+({}[e]||e)+"."+{3:"a6e4d959"}[e]+".chunk.js"}(e);var c=new Error;u=function(r){i.onerror=i.onload=null,clearTimeout(l);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:i})}),12e4);i.onerror=i.onload=u,document.head.appendChild(i)}return Promise.all(r)},a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/",a.oe=function(e){throw console.error(e),e};var i=this["webpackJsonpmy-app"]=this["webpackJsonpmy-app"]||[],c=i.push.bind(i);i.push=r,i=i.slice();for(var l=0;l<i.length;l++)r(i[l]);var p=c;t()}([])</script><script src="/static/js/2.d0eb047a.chunk.js"></script><script src="/static/js/main.d1490275.chunk.js"></script></body></html>
+[32;1m$ curl $CI_ENVIRONMENT_URL/version.html | grep $APP_VERSION[0;m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     2  100     2    0     0      4      0 --:--:-- --:--:-- --:--:--     5
+4
+section_end:1647780868:step_script[0Ksection_start:1647780868:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647780868:cleanup_file_variables[0K[32;1mJob succeeded[0;m

@@ -1,0 +1,46 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647772055:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image docker:19.03.12 ...[0;m
+[0KStarting service docker:19.03.12-dind ...[0;m
+[0KPulling docker image docker:19.03.12-dind ...[0;m
+[0KUsing docker image sha256:66dc2d45749a48592f4348fb3d567bdd65c9dbd5402a413b6d169619e32f6bd2 for docker:19.03.12-dind with digest docker@sha256:674f1f40ff7c8ac14f5d8b6b28d8fb1f182647ff75304d018003f1e21a0d8771 ...[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-35760dbd35f5c60e-docker-0 probably didn't start properly.
+
+Health check error:
+start service container: Error response from daemon: Cannot link to a non running container: /runner-8g8vflme-project-2-concurrent-0-35760dbd35f5c60e-docker-0 AS /runner-8g8vflme-project-2-concurrent-0-35760dbd35f5c60e-docker-0-wait-for-service/service (docker.go:1162:0s)
+
+Service container logs:
+2022-03-20T10:27:42.679242993Z mount: permission denied (are you root?)
+2022-03-20T10:27:42.679862203Z Could not mount /sys/kernel/security.
+2022-03-20T10:27:42.679876083Z AppArmor detection and --privileged mode might break.
+2022-03-20T10:27:42.680950914Z mount: permission denied (are you root?)
+
+[0;33m*********[0;m
+
+[0KPulling docker image docker:19.03.12 ...[0;m
+[0KUsing docker image sha256:81f5749c9058a7284e6acd8e126f2b882765a17b9ead14422b51cde1a110b85c for docker:19.03.12 with digest docker@sha256:d41efe7ad0df5a709cfd4e627c7e45104f39bbc08b1b40d7fb718c562b3ce135 ...[0;m
+section_end:1647772063:prepare_executor[0Ksection_start:1647772063:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647772064:prepare_script[0Ksection_start:1647772064:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out 70df9f06 as main...[0;m
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647772065:get_sources[0Ksection_start:1647772065:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:81f5749c9058a7284e6acd8e126f2b882765a17b9ead14422b51cde1a110b85c for docker:19.03.12 with digest docker@sha256:d41efe7ad0df5a709cfd4e627c7e45104f39bbc08b1b40d7fb718c562b3ce135 ...[0;m
+[32;1m$ export SOURCE_CODE=$PWD[0;m
+[32;1m$ if ! docker info &>/dev/null; then # collapsed multi-line command[0;m
+[32;1m$ function propagate_env_vars() { # collapsed multi-line command[0;m
+[32;1m$ docker pull --quiet "$CODE_QUALITY_IMAGE"[0;m
+error during connect: Post http://docker:2375/v1.40/images/create?fromImage=registry.gitlab.com%2Fgitlab-org%2Fci-cd%2Fcodequality&tag=0.85.26: dial tcp: lookup docker on 169.254.169.254:53: no such host
+section_end:1647772066:step_script[0Ksection_start:1647772066:upload_artifacts_on_failure[0K[0K[36;1mUploading artifacts for failed job[0;m[0;m
+[32;1mUploading artifacts...[0;m
+[0;33mWARNING: gl-code-quality-report.json: no matching files[0;m 
+[31;1mERROR: No files to upload                         [0;m 
+section_end:1647772067:upload_artifacts_on_failure[0Ksection_start:1647772067:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647772067:cleanup_file_variables[0K[31;1mERROR: Job failed: exit code 1
+[0;m

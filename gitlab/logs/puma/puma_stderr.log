@@ -1,0 +1,2 @@
+=== puma startup: 2022-03-20 09:31:00 +0000 ===
+DEPRECATION WARNING: using BatchLoader.for in GraphQL is deprecated. Use BatchLoader::GraphQL.for instead or return BatchLoader::GraphQL.wrap from your resolver.

@@ -1,0 +1,14 @@
+2022-03-20_09:30:06.59490 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"Puma starting in cluster mode..."}
+2022-03-20_09:30:06.59496 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"* Puma version: 5.6.2 (ruby 2.7.5-p203) (\"Birdie's Version\")"}
+2022-03-20_09:30:06.59497 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"*  Min threads: 4"}
+2022-03-20_09:30:06.59497 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"*  Max threads: 4"}
+2022-03-20_09:30:06.59497 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"*  Environment: production"}
+2022-03-20_09:30:06.59497 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"*   Master PID: 895"}
+2022-03-20_09:30:06.59498 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"*      Workers: 4"}
+2022-03-20_09:30:06.59498 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"*     Restarts: (✔) hot (✖) phased"}
+2022-03-20_09:30:06.59498 {"timestamp":"2022-03-20T09:30:05.773Z","pid":895,"message":"* Preloading application"}
+2022-03-20_09:31:00.58924 {"timestamp":"2022-03-20T09:31:00.589Z","pid":895,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2022-03-20_09:31:00.58984 {"timestamp":"2022-03-20T09:31:00.589Z","pid":895,"message":"* Listening on http://127.0.0.1:8080"}
+2022-03-20_09:31:00.58999 {"timestamp":"2022-03-20T09:31:00.589Z","pid":895,"message":"! WARNING: Detected 1 Thread(s) started in app boot:"}
+2022-03-20_09:31:00.59016 {"timestamp":"2022-03-20T09:31:00.590Z","pid":895,"message":"! #\u003cThread:0x00007efebcbd5990 /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:73 sleep\u003e - /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:91:in `sleep'"}
+2022-03-20_09:31:00.59037 {"timestamp":"2022-03-20T09:31:00.590Z","pid":895,"message":"Use Ctrl-C to stop"}

@@ -1,0 +1,29 @@
+concurrent = 1
+check_interval = 0
+
+[session_server]
+  session_timeout = 1800
+
+[[runners]]
+  name = "docker"
+  url = "https://learning-devops.tk"
+  token = "8g8VfLmEoLEC61aeigzv"
+  executor = "docker"
+  clone_url = "https://learning-devops.tk"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+  [runners.docker]
+    tls_verify = false
+    image = "docker:20.10.13"
+    privileged = true 
+    disable_entrypoint_overwrite = false
+    oom_kill_disable = false
+    disable_cache = false
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
+    shm_size = 0
+    [[runners.docker.services]]
+      name = "docker:20.10.13-dind"
+      command = ["--registry-mirror", "https://registry-mirror.example.com"]

@@ -1,0 +1,48 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647771918:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image:v1.5.0 ...[0;m
+[0KPulling docker image registry.gitlab.com/gitlab-org/gitlab-runner/gitlab-runner-helper:x86_64-c6e7e194 ...[0;m
+[0KUsing docker image sha256:c72d9a3abecab164096a8e5173bb63b5c28f16dcce6deb4132f8c2f2b906506c for registry.gitlab.com/gitlab-org/gitlab-runner/gitlab-runner-helper:x86_64-c6e7e194 with digest registry.gitlab.com/gitlab-org/gitlab-runner/gitlab-runner-helper@sha256:ce3c9df21d6123845794fa7f34b59a5f5416e0409f739d3888aadd3b3e6c8570 ...[0;m
+[0KStarting service docker:20.10.6-dind ...[0;m
+[0KPulling docker image docker:20.10.6-dind ...[0;m
+[0KUsing docker image sha256:dc8c389414c80f3c6510d3690cd03c29fc99d66f58955f138248499a34186bfa for docker:20.10.6-dind with digest docker@sha256:aa1e1fab842a35f16cf6e8fcb82b77b29be46f6aa8cd0fe69db0908940256be7 ...[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-ff8087eff6f12eca-docker-0 probably didn't start properly.
+
+Health check error:
+start service container: Error response from daemon: Cannot link to a non running container: /runner-8g8vflme-project-2-concurrent-0-ff8087eff6f12eca-docker-0 AS /runner-8g8vflme-project-2-concurrent-0-ff8087eff6f12eca-docker-0-wait-for-service/service (docker.go:1162:0s)
+
+Service container logs:
+2022-03-20T10:25:28.777400547Z mount: permission denied (are you root?)
+2022-03-20T10:25:28.777439896Z Could not mount /sys/kernel/security.
+2022-03-20T10:25:28.777446738Z AppArmor detection and --privileged mode might break.
+2022-03-20T10:25:28.778777857Z mount: permission denied (are you root?)
+
+[0;33m*********[0;m
+
+[0KPulling docker image registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image:v1.5.0 ...[0;m
+[0KUsing docker image sha256:f75ff45c06b697172607d2d8278f8200f3d0a803e1153ab02b2751061b834175 for registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image:v1.5.0 with digest registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image@sha256:df833397d97eeeb4b554c6222c4d7909cd601652aa64a571484a8694eef106b2 ...[0;m
+section_end:1647771931:prepare_executor[0Ksection_start:1647771931:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647771933:prepare_script[0Ksection_start:1647771933:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Initialized empty Git repository in /builds/root/learn_ci/.git/
+[32;1mCreated fresh repository.[0;m
+[32;1mChecking out 70df9f06 as main...[0;m
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647771934:get_sources[0Ksection_start:1647771934:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:f75ff45c06b697172607d2d8278f8200f3d0a803e1153ab02b2751061b834175 for registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image:v1.5.0 with digest registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image@sha256:df833397d97eeeb4b554c6222c4d7909cd601652aa64a571484a8694eef106b2 ...[0;m
+[32;1m$ if [[ -z "$CI_COMMIT_TAG" ]]; then # collapsed multi-line command[0;m
+[32;1m$ /build/build.sh[0;m
+Logging in to GitLab Dependency proxy with CI credentials...
+error during connect: Post http://docker:2375/v1.24/auth: dial tcp: lookup docker on 169.254.169.254:53: no such host
+section_end:1647771935:step_script[0Ksection_start:1647771935:upload_artifacts_on_failure[0K[0K[36;1mUploading artifacts for failed job[0;m[0;m
+[32;1mUploading artifacts...[0;m
+[0;33mWARNING: gl-auto-build-variables.env: no matching files[0;m 
+[31;1mERROR: No files to upload                         [0;m 
+section_end:1647771935:upload_artifacts_on_failure[0Ksection_start:1647771935:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647771936:cleanup_file_variables[0K[31;1mERROR: Job failed: exit code 1
+[0;m

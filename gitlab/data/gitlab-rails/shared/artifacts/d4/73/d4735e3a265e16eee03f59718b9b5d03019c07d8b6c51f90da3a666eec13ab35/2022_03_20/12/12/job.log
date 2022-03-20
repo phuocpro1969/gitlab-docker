@@ -1,0 +1,90 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647776706:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image node:16-alpine ...[0;m
+[0KPulling docker image node:16-alpine ...[0;m
+[0KUsing docker image sha256:41b9374c09018007d5ad0dc97aa1db92a56b0a792684ebfffebd8113b2f4be06 for node:16-alpine with digest node@sha256:72a490e7ed8aed68e16b8dc8f37b5bcc35c5b5c56ee3256effcdee63e2546f93 ...[0;m
+section_end:1647776708:prepare_executor[0Ksection_start:1647776708:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647776709:prepare_script[0Ksection_start:1647776709:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out cd2e86dc as main...[0;m
+Removing build/
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647776710:get_sources[0Ksection_start:1647776710:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:41b9374c09018007d5ad0dc97aa1db92a56b0a792684ebfffebd8113b2f4be06 for node:16-alpine with digest node@sha256:72a490e7ed8aed68e16b8dc8f37b5bcc35c5b5c56ee3256effcdee63e2546f93 ...[0;m
+[32;1m$ yarn install[0;m
+yarn install v1.22.18
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning " > @testing-library/user-event@12.8.3" has unmet peer dependency "@testing-library/dom@>=7.21.4".
+warning "react-scripts > @typescript-eslint/eslint-plugin > tsutils@3.20.0" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+[4/4] Building fresh packages...
+Done in 41.69s.
+[32;1m$ yarn lint[0;m
+yarn run v1.22.18
+$ eslint src/**/*.js
+Done in 0.99s.
+[32;1m$ yarn test[0;m
+yarn run v1.22.18
+$ react-scripts test
+PASS src/App.test.js
+  ✓ renders learn react link (86 ms)
+
+  console.log
+    test
+
+      at Object.<anonymous> (src/App.test.js:6:11)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        3.252 s
+Ran all test suites.
+Done in 4.42s.
+[32;1m$ yarn build[0;m
+yarn run v1.22.18
+$ react-scripts build
+(node:181) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /builds/root/learn_ci/node_modules/postcss-safe-parser/node_modules/postcss/package.json.
+Update this package.json to use a subpath pattern like "./*".
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Creating an optimized production build...
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+Compiled successfully.
+
+File sizes after gzip:
+
+  41.33 KB  build/static/js/2.d0eb047a.chunk.js
+  1.63 KB   build/static/js/3.a6e4d959.chunk.js
+  1.17 KB   build/static/js/runtime-main.31ee9be5.js
+  689 B     build/static/css/main.15db5ee1.chunk.css
+  552 B     build/static/js/main.d1490275.chunk.js
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+Done in 11.93s.
+[32;1m$ echo $APP_VERSION > build/version.html[0;m
+section_end:1647776771:step_script[0Ksection_start:1647776771:upload_artifacts_on_success[0K[0K[36;1mUploading artifacts for successful job[0;m[0;m
+[32;1mUploading artifacts...[0;m
+build: found 25 matching files and directories    [0;m 
+Uploading artifacts as "archive" to coordinator... 201 Created[0;m  id[0;m=12 responseStatus[0;m=201 Created token[0;m=Nc14kCrG
+section_end:1647776772:upload_artifacts_on_success[0Ksection_start:1647776772:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647776772:cleanup_file_variables[0K[32;1mJob succeeded[0;m

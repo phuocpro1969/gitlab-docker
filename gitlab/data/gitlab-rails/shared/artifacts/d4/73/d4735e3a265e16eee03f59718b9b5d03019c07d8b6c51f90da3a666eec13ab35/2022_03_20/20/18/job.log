@@ -1,0 +1,66 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647778671:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image docker:20.10.13 ...[0;m
+[0KStarting service docker:20.10.13-dind ...[0;m
+[0KPulling docker image docker:20.10.13-dind ...[0;m
+[0KUsing docker image sha256:12be8f658512ce5ca4f7e20a59a0ed17f592a41171a46ffd45888643b83eb598 for docker:20.10.13-dind with digest docker@sha256:e37536394e82073384d22a24a3514496eeee2890c823cfb94628ced9ae387a01 ...[0;m
+[0;33mWARNING: Service docker:20.10.13-dind is already created. Ignoring.[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-125520335fb00e06-docker-0 probably didn't start properly.
+
+Health check error:
+service "runner-8g8vflme-project-2-concurrent-0-125520335fb00e06-docker-0-wait-for-service" timeout
+
+Health check container logs:
+
+
+Service container logs:
+2022-03-20T12:17:53.420392659Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:17:54.080378234Z ...................................................................................................................................++++
+2022-03-20T12:17:54.195859580Z ........................++++
+2022-03-20T12:17:54.196430987Z e is 65537 (0x010001)
+2022-03-20T12:17:54.214186582Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:17:54.654370401Z .................................................................................................++++
+2022-03-20T12:17:55.139323037Z .............................................................................................................++++
+2022-03-20T12:17:55.139832121Z e is 65537 (0x010001)
+2022-03-20T12:17:55.174282893Z Signature ok
+2022-03-20T12:17:55.174312567Z subject=CN = docker:dind server
+2022-03-20T12:17:55.174574215Z Getting CA Private Key
+2022-03-20T12:17:55.189248757Z /certs/server/cert.pem: OK
+2022-03-20T12:17:55.193859664Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:17:55.382923231Z ..........................................++++
+2022-03-20T12:17:56.371748258Z .............................................................................................................................................................................................................................++++
+2022-03-20T12:17:56.372336268Z e is 65537 (0x010001)
+2022-03-20T12:17:56.401787539Z Signature ok
+2022-03-20T12:17:56.401819318Z subject=CN = docker:dind client
+2022-03-20T12:17:56.402069882Z Getting CA Private Key
+2022-03-20T12:17:56.416653839Z /certs/client/cert.pem: OK
+2022-03-20T12:17:56.506196792Z time="2022-03-20T12:17:56.505959886Z" level=info msg="Starting up"
+2022-03-20T12:17:56.508211981Z time="2022-03-20T12:17:56.507996666Z" level=warning msg="could not change group /var/run/docker.sock to docker: group docker not found"
+2022-03-20T12:17:56.508236680Z failed to load listeners: can't create unix socket /var/run/docker.sock: device or resource busy
+
+[0;33m*********[0;m
+
+[0KPulling docker image docker:20.10.13 ...[0;m
+[0KUsing docker image sha256:85c28705179d9a0a411cee6be20fa0d785c779abaea0e90a4fae6ebdad76f207 for docker:20.10.13 with digest docker@sha256:24ce434e9bf049bd60d4810708f3ac0ec56810ea47fc092aff5dde4c5317a4f1 ...[0;m
+section_end:1647778705:prepare_executor[0Ksection_start:1647778705:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647778706:prepare_script[0Ksection_start:1647778706:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out cd2e86dc as main...[0;m
+Removing build/
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647778707:get_sources[0Ksection_start:1647778707:download_artifacts[0K[0K[36;1mDownloading artifacts[0;m[0;m
+[32;1mDownloading artifacts for build website (12)...[0;m
+Downloading artifacts from coordinator... ok      [0;m  id[0;m=12 responseStatus[0;m=200 OK token[0;m=Nc14kCrG
+section_end:1647778708:download_artifacts[0Ksection_start:1647778708:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:85c28705179d9a0a411cee6be20fa0d785c779abaea0e90a4fae6ebdad76f207 for docker:20.10.13 with digest docker@sha256:24ce434e9bf049bd60d4810708f3ac0ec56810ea47fc092aff5dde4c5317a4f1 ...[0;m
+[32;1m$ echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin[0;m
+Error response from daemon: Get "https://mywebsite/v2/": dial tcp: lookup mywebsite: Temporary failure in name resolution
+section_end:1647778708:step_script[0Ksection_start:1647778708:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647778709:cleanup_file_variables[0K[31;1mERROR: Job failed: exit code 1
+[0;m

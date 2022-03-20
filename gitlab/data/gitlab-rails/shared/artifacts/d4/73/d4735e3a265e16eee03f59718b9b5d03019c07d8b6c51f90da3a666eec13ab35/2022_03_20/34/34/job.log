@@ -1,0 +1,156 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647781337:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image amazon/aws-cli:2.4.11 ...[0;m
+[0KStarting service docker:20.10.13-dind ...[0;m
+[0KPulling docker image docker:20.10.13-dind ...[0;m
+[0KUsing docker image sha256:12be8f658512ce5ca4f7e20a59a0ed17f592a41171a46ffd45888643b83eb598 for docker:20.10.13-dind with digest docker@sha256:e37536394e82073384d22a24a3514496eeee2890c823cfb94628ced9ae387a01 ...[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-4e2cfd1d79362a69-docker-0 probably didn't start properly.
+
+Health check error:
+service "runner-8g8vflme-project-2-concurrent-0-4e2cfd1d79362a69-docker-0-wait-for-service" timeout
+
+Health check container logs:
+
+
+Service container logs:
+2022-03-20T13:02:19.653388166Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T13:02:20.596829466Z ...............................................................................................................................................................................++++
+2022-03-20T13:02:20.687097885Z ...................++++
+2022-03-20T13:02:20.687713471Z e is 65537 (0x010001)
+2022-03-20T13:02:20.705368234Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T13:02:20.903042821Z ...........................................++++
+2022-03-20T13:02:21.375624827Z ..........................................................................................................++++
+2022-03-20T13:02:21.376183267Z e is 65537 (0x010001)
+2022-03-20T13:02:21.411878237Z Signature ok
+2022-03-20T13:02:21.412187365Z subject=CN = docker:dind server
+2022-03-20T13:02:21.412516390Z Getting CA Private Key
+2022-03-20T13:02:21.427086644Z /certs/server/cert.pem: OK
+2022-03-20T13:02:21.431762674Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T13:02:21.938772868Z .................................................................................................................++++
+2022-03-20T13:02:22.184079259Z .....................................................++++
+2022-03-20T13:02:22.184651590Z e is 65537 (0x010001)
+2022-03-20T13:02:22.214527876Z Signature ok
+2022-03-20T13:02:22.214563411Z subject=CN = docker:dind client
+2022-03-20T13:02:22.214797946Z Getting CA Private Key
+2022-03-20T13:02:22.228932189Z /certs/client/cert.pem: OK
+2022-03-20T13:02:22.325084179Z time="2022-03-20T13:02:22.324721997Z" level=info msg="Starting up"
+2022-03-20T13:02:22.327368125Z time="2022-03-20T13:02:22.327168447Z" level=warning msg="could not change group /var/run/docker.sock to docker: group docker not found"
+2022-03-20T13:02:22.327472206Z failed to load listeners: can't create unix socket /var/run/docker.sock: device or resource busy
+
+[0;33m*********[0;m
+
+[0KPulling docker image amazon/aws-cli:2.4.11 ...[0;m
+[0KUsing docker image sha256:3e880fcd134b187fb3b4f61f3b9ba13d24df4a3189af2ea7774b71280970fe25 for amazon/aws-cli:2.4.11 with digest amazon/aws-cli@sha256:8effaed358d0a64920a57c697c6f9ddb779f02ead955401d3bc4f28cfaedf969 ...[0;m
+section_end:1647781371:prepare_executor[0Ksection_start:1647781371:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647781372:prepare_script[0Ksection_start:1647781372:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out 7ad8af28 as main...[0;m
+Removing Dockerrun.aws.json
+Removing auth.json
+Removing build/
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647781373:get_sources[0Ksection_start:1647781373:download_artifacts[0K[0K[36;1mDownloading artifacts[0;m[0;m
+[32;1mDownloading artifacts for build website (22)...[0;m
+Downloading artifacts from coordinator... ok      [0;m  id[0;m=22 responseStatus[0;m=200 OK token[0;m=Q5x82zy9
+section_end:1647781374:download_artifacts[0Ksection_start:1647781374:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:3e880fcd134b187fb3b4f61f3b9ba13d24df4a3189af2ea7774b71280970fe25 for amazon/aws-cli:2.4.11 with digest amazon/aws-cli@sha256:8effaed358d0a64920a57c697c6f9ddb779f02ead955401d3bc4f28cfaedf969 ...[0;m
+[32;1m$ aws --version[0;m
+aws-cli/2.4.11 Python/3.8.8 Linux/5.4.0-1064-gcp docker/x86_64.amzn.2 prompt/off
+[32;1m$ yum install -y gettext[0;m
+Loaded plugins: ovl, priorities
+Resolving Dependencies
+--> Running transaction check
+---> Package gettext.x86_64 0:0.19.8.1-3.amzn2 will be installed
+--> Processing Dependency: gettext-libs(x86-64) = 0.19.8.1-3.amzn2 for package: gettext-0.19.8.1-3.amzn2.x86_64
+--> Processing Dependency: libgomp.so.1(GOMP_4.0)(64bit) for package: gettext-0.19.8.1-3.amzn2.x86_64
+--> Processing Dependency: libgomp.so.1(GOMP_1.0)(64bit) for package: gettext-0.19.8.1-3.amzn2.x86_64
+--> Processing Dependency: libgomp.so.1()(64bit) for package: gettext-0.19.8.1-3.amzn2.x86_64
+--> Processing Dependency: libgettextsrc-0.19.8.1.so()(64bit) for package: gettext-0.19.8.1-3.amzn2.x86_64
+--> Processing Dependency: libgettextlib-0.19.8.1.so()(64bit) for package: gettext-0.19.8.1-3.amzn2.x86_64
+--> Processing Dependency: libcroco-0.6.so.3()(64bit) for package: gettext-0.19.8.1-3.amzn2.x86_64
+--> Running transaction check
+---> Package gettext-libs.x86_64 0:0.19.8.1-3.amzn2 will be installed
+---> Package libcroco.x86_64 0:0.6.12-6.amzn2 will be installed
+---> Package libgomp.x86_64 0:7.3.1-13.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package            Arch         Version                 Repository        Size
+================================================================================
+Installing:
+ gettext            x86_64       0.19.8.1-3.amzn2        amzn2-core       1.0 M
+Installing for dependencies:
+ gettext-libs       x86_64       0.19.8.1-3.amzn2        amzn2-core       500 k
+ libcroco           x86_64       0.6.12-6.amzn2          amzn2-core       103 k
+ libgomp            x86_64       7.3.1-13.amzn2          amzn2-core       204 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+3 Dependent packages)
+
+Total download size: 1.8 M
+Installed size: 6.8 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              6.5 MB/s | 1.8 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libcroco-0.6.12-6.amzn2.x86_64                               1/4 
+  Installing : libgomp-7.3.1-13.amzn2.x86_64                                2/4 
+  Installing : gettext-libs-0.19.8.1-3.amzn2.x86_64                         3/4 
+  Installing : gettext-0.19.8.1-3.amzn2.x86_64                              4/4 
+  Verifying  : libgomp-7.3.1-13.amzn2.x86_64                                1/4 
+  Verifying  : gettext-libs-0.19.8.1-3.amzn2.x86_64                         2/4 
+  Verifying  : gettext-0.19.8.1-3.amzn2.x86_64                              3/4 
+  Verifying  : libcroco-0.6.12-6.amzn2.x86_64                               4/4 
+
+Installed:
+  gettext.x86_64 0:0.19.8.1-3.amzn2                                             
+
+Dependency Installed:
+  gettext-libs.x86_64 0:0.19.8.1-3.amzn2    libcroco.x86_64 0:0.6.12-6.amzn2   
+  libgomp.x86_64 0:7.3.1-13.amzn2          
+
+Complete!
+[32;1m$ export DEPLOY_TOKEN=$(echo $GITLAB_DEPLOY_TOKEN | tr -d "\n" | base64)[0;m
+[32;1m$ envsubst < templates/Dockerrun.aws.json > Dockerrun.aws.json[0;m
+[32;1m$ envsubst < templates/auth.json > auth.json[0;m
+[32;1m$ cat Dockerrun.aws.json[0;m
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "phuocpro1969/mywebsite:4"
+  },
+  "Authentication": {
+    "Bucket": "elasticbeanstalk-ap-southeast-1-035533673848	",
+    "Key": "auth.json"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 80
+    }
+  ]
+}[32;1m$ cat auth.json[0;m
+{
+    "auths": {
+        "": {
+            "auth": "QVdTOjlKSEdIakdSR0JHNnpjb3N5MXlG"
+        }
+    }
+}
+[32;1m$ aws s3 cp Dockerrun.aws.json s3://$AWS_S3_BUCKET/Dockerrun.aws.json[0;m
+
+Unknown options: /Dockerrun.aws.json
+section_end:1647781385:step_script[0Ksection_start:1647781385:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647781385:cleanup_file_variables[0K[31;1mERROR: Job failed: exit code 1
+[0;m

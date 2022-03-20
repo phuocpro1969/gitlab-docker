@@ -1,0 +1,134 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647780731:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image docker:20.10.13 ...[0;m
+[0KStarting service docker:20.10.13-dind ...[0;m
+[0KPulling docker image docker:20.10.13-dind ...[0;m
+[0KUsing docker image sha256:12be8f658512ce5ca4f7e20a59a0ed17f592a41171a46ffd45888643b83eb598 for docker:20.10.13-dind with digest docker@sha256:e37536394e82073384d22a24a3514496eeee2890c823cfb94628ced9ae387a01 ...[0;m
+[0;33mWARNING: Service docker:20.10.13-dind is already created. Ignoring.[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-7ea415564c6547ce-docker-0 probably didn't start properly.
+
+Health check error:
+service "runner-8g8vflme-project-2-concurrent-0-7ea415564c6547ce-docker-0-wait-for-service" timeout
+
+Health check container logs:
+
+
+Service container logs:
+2022-03-20T12:52:13.616868597Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:52:13.910414429Z ..................................................++++
+2022-03-20T12:52:14.025887301Z .....................++++
+2022-03-20T12:52:14.029525501Z e is 65537 (0x010001)
+2022-03-20T12:52:14.051516780Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:52:14.492792448Z .............................................................................................++++
+2022-03-20T12:52:15.014730776Z ....................................................................................................................++++
+2022-03-20T12:52:15.015246607Z e is 65537 (0x010001)
+2022-03-20T12:52:15.051505016Z Signature ok
+2022-03-20T12:52:15.051536193Z subject=CN = docker:dind server
+2022-03-20T12:52:15.051855406Z Getting CA Private Key
+2022-03-20T12:52:15.070856540Z /certs/server/cert.pem: OK
+2022-03-20T12:52:15.077288218Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T12:52:15.107622807Z .....++++
+2022-03-20T12:52:15.287847601Z ........................................++++
+2022-03-20T12:52:15.288429469Z e is 65537 (0x010001)
+2022-03-20T12:52:15.318496593Z Signature ok
+2022-03-20T12:52:15.318599984Z subject=CN = docker:dind client
+2022-03-20T12:52:15.318695036Z Getting CA Private Key
+2022-03-20T12:52:15.333448265Z /certs/client/cert.pem: OK
+2022-03-20T12:52:15.430561842Z time="2022-03-20T12:52:15.430257514Z" level=info msg="Starting up"
+2022-03-20T12:52:15.432851233Z time="2022-03-20T12:52:15.432617468Z" level=warning msg="could not change group /var/run/docker.sock to docker: group docker not found"
+2022-03-20T12:52:15.432893045Z failed to load listeners: can't create unix socket /var/run/docker.sock: device or resource busy
+
+[0;33m*********[0;m
+
+[0KPulling docker image docker:20.10.13 ...[0;m
+[0KUsing docker image sha256:85c28705179d9a0a411cee6be20fa0d785c779abaea0e90a4fae6ebdad76f207 for docker:20.10.13 with digest docker@sha256:24ce434e9bf049bd60d4810708f3ac0ec56810ea47fc092aff5dde4c5317a4f1 ...[0;m
+section_end:1647780765:prepare_executor[0Ksection_start:1647780765:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647780766:prepare_script[0Ksection_start:1647780766:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out 7ad8af28 as main...[0;m
+Removing build/
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647780767:get_sources[0Ksection_start:1647780767:download_artifacts[0K[0K[36;1mDownloading artifacts[0;m[0;m
+[32;1mDownloading artifacts for build website (22)...[0;m
+Downloading artifacts from coordinator... ok      [0;m  id[0;m=22 responseStatus[0;m=200 OK token[0;m=Q5x82zy9
+section_end:1647780768:download_artifacts[0Ksection_start:1647780768:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:85c28705179d9a0a411cee6be20fa0d785c779abaea0e90a4fae6ebdad76f207 for docker:20.10.13 with digest docker@sha256:24ce434e9bf049bd60d4810708f3ac0ec56810ea47fc092aff5dde4c5317a4f1 ...[0;m
+[32;1m$ echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin[0;m
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[32;1m$ docker build -t $CI_REGISTRY_IMAGE -t $CI_REGISTRY_IMAGE:$APP_VERSION .[0;m
+Sending build context to Docker daemon  1.335MB
+Step 1/2 : FROM nginx:latest
+ ---> f2f70adc5d89
+Step 2/2 : COPY build /usr/share/nginx/html
+ ---> Using cache
+ ---> b5b03b87f189
+Successfully built b5b03b87f189
+Successfully tagged phuocpro1969/mywebsite:latest
+Successfully tagged phuocpro1969/mywebsite:4
+[32;1m$ docker image ls[0;m
+REPOSITORY                                                            TAG               IMAGE ID       CREATED         SIZE
+mywebsite                                                             4                 b5b03b87f189   2 minutes ago   142MB
+mywebsite                                                             latest            b5b03b87f189   2 minutes ago   142MB
+phuocpro1969/mywebsite                                                4                 b5b03b87f189   2 minutes ago   142MB
+phuocpro1969/mywebsite                                                latest            b5b03b87f189   2 minutes ago   142MB
+node                                                                  16-alpine         41b9374c0901   39 hours ago    111MB
+docker                                                                20.10.13-dind     12be8f658512   2 days ago      235MB
+docker                                                                20.10.13          85c28705179d   2 days ago      218MB
+nginx                                                                 latest            f2f70adc5d89   2 days ago      142MB
+gitlab/gitlab-ce                                                      latest            14ee6896f2b8   3 days ago      2.38GB
+gitlab/gitlab-runner                                                  alpine            496e268d137d   2 weeks ago     223MB
+registry.gitlab.com/gitlab-org/gitlab-runner/gitlab-runner-helper     x86_64-c6e7e194   c72d9a3abeca   2 weeks ago     66.9MB
+amazon/aws-cli                                                        2.4.11            3e880fcd134b   2 months ago    334MB
+gliderlabs/herokuish                                                  latest            fe96602a2816   3 months ago    1.22GB
+registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image   v1.5.0            f75ff45c06b6   4 months ago    343MB
+docker                                                                20.10.6-dind      dc8c389414c8   10 months ago   263MB
+docker                                                                19.03.12-dind     66dc2d45749a   19 months ago   226MB
+docker                                                                19.03.12          81f5749c9058   21 months ago   211MB
+postgres                                                              9.6.16            cb2889ab0680   2 years ago     250MB
+[32;1m$ docker push --all-tags $CI_REGISTRY_IMAGE[0;m
+The push refers to repository [docker.io/phuocpro1969/mywebsite]
+4aff979cd041: Preparing
+24037b645d66: Preparing
+d00147ef6763: Preparing
+2793e885dc34: Preparing
+8b8ecda1d12d: Preparing
+30c00b5281a1: Preparing
+3a626bb08c24: Preparing
+30c00b5281a1: Waiting
+3a626bb08c24: Waiting
+24037b645d66: Pushed
+8b8ecda1d12d: Pushed
+2793e885dc34: Pushed
+d00147ef6763: Pushed
+4aff979cd041: Pushed
+30c00b5281a1: Pushed
+3a626bb08c24: Pushed
+4: digest: sha256:f3aa5c6e255fef6a1a5b63ba651679e4244c2211246b0e94badfc5e02b3e0193 size: 1780
+4aff979cd041: Preparing
+24037b645d66: Preparing
+d00147ef6763: Preparing
+2793e885dc34: Preparing
+8b8ecda1d12d: Preparing
+30c00b5281a1: Preparing
+3a626bb08c24: Preparing
+4aff979cd041: Layer already exists
+d00147ef6763: Layer already exists
+8b8ecda1d12d: Layer already exists
+24037b645d66: Layer already exists
+3a626bb08c24: Waiting
+30c00b5281a1: Layer already exists
+3a626bb08c24: Layer already exists
+2793e885dc34: Layer already exists
+latest: digest: sha256:f3aa5c6e255fef6a1a5b63ba651679e4244c2211246b0e94badfc5e02b3e0193 size: 1780
+section_end:1647780780:step_script[0Ksection_start:1647780780:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647780780:cleanup_file_variables[0K[32;1mJob succeeded[0;m

@@ -1,0 +1,70 @@
+[0KRunning with gitlab-runner 14.8.2 (c6e7e194)[0;m
+[0K  on docker 8g8VfLmE[0;m
+section_start:1647776819:prepare_executor[0K[0K[36;1mPreparing the "docker" executor[0;m[0;m
+[0KUsing Docker executor with image docker:20.10.13 ...[0;m
+[0KStarting service docker:20.10.13-dind ...[0;m
+[0KPulling docker image docker:20.10.13-dind ...[0;m
+[0KUsing docker image sha256:12be8f658512ce5ca4f7e20a59a0ed17f592a41171a46ffd45888643b83eb598 for docker:20.10.13-dind with digest docker@sha256:e37536394e82073384d22a24a3514496eeee2890c823cfb94628ced9ae387a01 ...[0;m
+[0KWaiting for services to be up and running...[0;m
+
+[0;33m*** WARNING:[0;m Service runner-8g8vflme-project-2-concurrent-0-68c3649c55bae685-docker-0 probably didn't start properly.
+
+Health check error:
+service "runner-8g8vflme-project-2-concurrent-0-68c3649c55bae685-docker-0-wait-for-service" timeout
+
+Health check container logs:
+
+
+Service container logs:
+2022-03-20T11:47:06.802117954Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T11:47:07.122003515Z ...............................................++++
+2022-03-20T11:47:07.174495834Z .......++++
+2022-03-20T11:47:07.175265782Z e is 65537 (0x010001)
+2022-03-20T11:47:07.202482368Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T11:47:07.242040936Z .....++++
+2022-03-20T11:47:07.409337038Z ...........................++++
+2022-03-20T11:47:07.409913785Z e is 65537 (0x010001)
+2022-03-20T11:47:07.445919445Z Signature ok
+2022-03-20T11:47:07.445948395Z subject=CN = docker:dind server
+2022-03-20T11:47:07.446228249Z Getting CA Private Key
+2022-03-20T11:47:07.460739452Z /certs/server/cert.pem: OK
+2022-03-20T11:47:07.465260508Z Generating RSA private key, 4096 bit long modulus (2 primes)
+2022-03-20T11:47:07.499065604Z ......++++
+2022-03-20T11:47:07.961552325Z .........................................................................................................++++
+2022-03-20T11:47:07.962148795Z e is 65537 (0x010001)
+2022-03-20T11:47:07.992859282Z Signature ok
+2022-03-20T11:47:07.992986032Z subject=CN = docker:dind client
+2022-03-20T11:47:07.993463008Z Getting CA Private Key
+2022-03-20T11:47:08.009120009Z /certs/client/cert.pem: OK
+2022-03-20T11:47:08.061948744Z ip: can't find device 'ip_tables'
+2022-03-20T11:47:08.064891641Z ip_tables              32768  2 iptable_nat,iptable_filter
+2022-03-20T11:47:08.065104407Z x_tables               45056  9 xt_nat,xt_tcpudp,xt_conntrack,xt_MASQUERADE,xt_addrtype,ip6table_filter,ip6_tables,iptable_filter,ip_tables
+2022-03-20T11:47:08.066025700Z modprobe: can't change directory to '/lib/modules': No such file or directory
+2022-03-20T11:47:08.069783535Z mount: permission denied (are you root?)
+2022-03-20T11:47:08.069813114Z Could not mount /sys/kernel/security.
+2022-03-20T11:47:08.069819926Z AppArmor detection and --privileged mode might break.
+2022-03-20T11:47:08.071277144Z mount: permission denied (are you root?)
+
+[0;33m*********[0;m
+
+[0KPulling docker image docker:20.10.13 ...[0;m
+[0KUsing docker image sha256:85c28705179d9a0a411cee6be20fa0d785c779abaea0e90a4fae6ebdad76f207 for docker:20.10.13 with digest docker@sha256:24ce434e9bf049bd60d4810708f3ac0ec56810ea47fc092aff5dde4c5317a4f1 ...[0;m
+section_end:1647776859:prepare_executor[0Ksection_start:1647776859:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-8g8vflme-project-2-concurrent-0 via 8c4e00366ed6...
+section_end:1647776860:prepare_script[0Ksection_start:1647776860:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Reinitialized existing Git repository in /builds/root/learn_ci/.git/
+[32;1mChecking out cd2e86dc as main...[0;m
+Removing build/
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1647776861:get_sources[0Ksection_start:1647776861:download_artifacts[0K[0K[36;1mDownloading artifacts[0;m[0;m
+[32;1mDownloading artifacts for build website (12)...[0;m
+Downloading artifacts from coordinator... ok      [0;m  id[0;m=12 responseStatus[0;m=200 OK token[0;m=Nc14kCrG
+section_end:1647776862:download_artifacts[0Ksection_start:1647776862:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:85c28705179d9a0a411cee6be20fa0d785c779abaea0e90a4fae6ebdad76f207 for docker:20.10.13 with digest docker@sha256:24ce434e9bf049bd60d4810708f3ac0ec56810ea47fc092aff5dde4c5317a4f1 ...[0;m
+[32;1m$ echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin[0;m
+error during connect: Post "http://docker:2375/v1.24/auth": dial tcp: lookup docker on 169.254.169.254:53: no such host
+section_end:1647776863:step_script[0Ksection_start:1647776863:cleanup_file_variables[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1647776863:cleanup_file_variables[0K[31;1mERROR: Job failed: exit code 1
+[0;m
