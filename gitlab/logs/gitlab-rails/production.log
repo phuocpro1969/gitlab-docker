@@ -14983,3 +14983,171 @@ Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:42:13 +0000
 Started GET "/root/learn_ci/-/pipelines.json?scope=all&page=1" for 118.69.128.53 at 2022-03-20 13:42:17 +0000
 Completed 304 Not Modified in 0ms (Allocations: 5)
 Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:42:23 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:42:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:42:33 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:42:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 74ms (Views: 0.6ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:42:43 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:42:53 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:42:57 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 72ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:43:03 +0000
+Started GET "/help" for 127.0.0.1 at 2022-03-20 13:43:04 +0000
+Processing by HelpController#index as */*
+  Rendered layout layouts/help.html.haml (Duration: 105.3ms | Allocations: 88100)
+Completed 200 OK in 110ms (Views: 103.3ms | ActiveRecord: 2.6ms | Elasticsearch: 0.0ms | Allocations: 89741)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:43:12 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 71ms (Views: 0.6ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:43:13 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:43:23 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:43:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 926)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:43:33 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:43:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 71ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:43:43 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:43:53 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:43:57 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 71ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:44:03 +0000
+Started GET "/help" for 127.0.0.1 at 2022-03-20 13:44:05 +0000
+Processing by HelpController#index as */*
+  Rendered layout layouts/help.html.haml (Duration: 155.9ms | Allocations: 87907)
+Completed 200 OK in 160ms (Views: 154.1ms | ActiveRecord: 2.5ms | Elasticsearch: 0.0ms | Allocations: 89548)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:44:12 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 938)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:44:13 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:44:23 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:44:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:44:33 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:44:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 73ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:44:43 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:44:53 +0000
+Started GET "/root/learn_ci/-/pipelines.json?scope=all&page=1" for 118.68.184.85 at 2022-03-20 13:44:54 +0000
+Completed 304 Not Modified in 0ms (Allocations: 5)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:44:57 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.8ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/root/learn_ci/-/pipelines.json?scope=all&page=1" for 118.68.184.85 at 2022-03-20 13:44:58 +0000
+Completed 304 Not Modified in 0ms (Allocations: 5)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:45:03 +0000
+Started GET "/help" for 127.0.0.1 at 2022-03-20 13:45:05 +0000
+Processing by HelpController#index as */*
+  Rendered layout layouts/help.html.haml (Duration: 104.9ms | Allocations: 87881)
+Completed 200 OK in 109ms (Views: 103.0ms | ActiveRecord: 2.6ms | Elasticsearch: 0.0ms | Allocations: 89522)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:45:12 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 82ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:45:13 +0000
+Started GET "/root/learn_ci/-/pipelines.json?scope=all&page=1" for 118.68.184.85 at 2022-03-20 13:45:18 +0000
+Completed 304 Not Modified in 0ms (Allocations: 5)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:45:23 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:45:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 74ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:45:33 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:45:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 75ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:45:43 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:45:53 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:45:57 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 83ms (Views: 0.8ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 938)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:46:03 +0000
+Started GET "/help" for 127.0.0.1 at 2022-03-20 13:46:05 +0000
+Processing by HelpController#index as */*
+  Rendered layout layouts/help.html.haml (Duration: 109.1ms | Allocations: 87877)
+Completed 200 OK in 113ms (Views: 107.0ms | ActiveRecord: 2.8ms | Elasticsearch: 0.0ms | Allocations: 89518)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:46:12 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 74ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:46:13 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:46:23 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:46:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 73ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:46:33 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:46:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 73ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:46:43 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:46:53 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:46:57 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:47:03 +0000
+Started GET "/help" for 127.0.0.1 at 2022-03-20 13:47:05 +0000
+Processing by HelpController#index as */*
+  Rendered layout layouts/help.html.haml (Duration: 101.0ms | Allocations: 87895)
+Completed 200 OK in 105ms (Views: 99.3ms | ActiveRecord: 2.5ms | Elasticsearch: 0.0ms | Allocations: 89536)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:47:12 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 79ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:47:13 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:47:23 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:47:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.6ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:47:33 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:47:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 76ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:47:43 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:47:53 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:47:57 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 72ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:48:03 +0000
+Started GET "/help" for 127.0.0.1 at 2022-03-20 13:48:06 +0000
+Processing by HelpController#index as */*
+  Rendered layout layouts/help.html.haml (Duration: 109.8ms | Allocations: 87879)
+Completed 200 OK in 114ms (Views: 107.9ms | ActiveRecord: 2.6ms | Elasticsearch: 0.0ms | Allocations: 89520)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:48:12 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 72ms (Views: 0.7ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:48:13 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:48:23 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:48:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 70ms (Views: 0.6ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:48:33 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:48:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 76ms (Views: 0.8ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:48:43 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:48:53 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:48:57 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 71ms (Views: 0.8ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:49:03 +0000
+Started GET "/help" for 127.0.0.1 at 2022-03-20 13:49:06 +0000
+Processing by HelpController#index as */*
+  Rendered layout layouts/help.html.haml (Duration: 108.1ms | Allocations: 88142)
+Completed 200 OK in 113ms (Views: 106.3ms | ActiveRecord: 2.5ms | Elasticsearch: 0.0ms | Allocations: 89783)
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:49:12 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 75ms (Views: 0.6ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:49:13 +0000
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:49:24 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:49:27 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 69ms (Views: 0.6ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:49:34 +0000
+Started GET "/-/metrics" for 127.0.0.1 at 2022-03-20 13:49:42 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 72ms (Views: 0.8ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 925)
+Started GET "/api/v4/geo/proxy" for 127.0.0.1 at 2022-03-20 13:49:44 +0000

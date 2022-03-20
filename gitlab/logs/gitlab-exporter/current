@@ -7050,3 +7050,208 @@
 2022-03-20_13:42:19.89054 - -> /sidekiq
 2022-03-20_13:42:22.09424 127.0.0.1 - - [20/Mar/2022:13:42:21 UTC] "GET /database HTTP/1.1" 200 1253
 2022-03-20_13:42:22.09472 - -> /database
+2022-03-20_13:42:25.26057 127.0.0.1 - - [20/Mar/2022:13:42:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:42:25.26067 - -> /ruby
+2022-03-20_13:42:34.81818 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:42:34.85004 127.0.0.1 - - [20/Mar/2022:13:42:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:42:34.85014 - -> /sidekiq
+2022-03-20_13:42:37.09601 127.0.0.1 - - [20/Mar/2022:13:42:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:42:37.09606 - -> /database
+2022-03-20_13:42:40.26043 127.0.0.1 - - [20/Mar/2022:13:42:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:42:40.26072 - -> /ruby
+2022-03-20_13:42:49.81818 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:42:49.84973 127.0.0.1 - - [20/Mar/2022:13:42:49 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:42:49.84984 - -> /sidekiq
+2022-03-20_13:42:52.09391 127.0.0.1 - - [20/Mar/2022:13:42:51 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:42:52.09401 - -> /database
+2022-03-20_13:42:55.26152 127.0.0.1 - - [20/Mar/2022:13:42:55 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:42:55.26160 - -> /ruby
+2022-03-20_13:43:04.81570 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:43:04.84684 127.0.0.1 - - [20/Mar/2022:13:43:04 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:43:04.84695 - -> /sidekiq
+2022-03-20_13:43:07.08948 127.0.0.1 - - [20/Mar/2022:13:43:06 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:43:07.08958 - -> /database
+2022-03-20_13:43:10.26035 127.0.0.1 - - [20/Mar/2022:13:43:10 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:43:10.26046 - -> /ruby
+2022-03-20_13:43:19.82541 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:43:19.85776 127.0.0.1 - - [20/Mar/2022:13:43:19 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:43:19.85786 - -> /sidekiq
+2022-03-20_13:43:22.09607 127.0.0.1 - - [20/Mar/2022:13:43:21 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:43:22.09617 - -> /database
+2022-03-20_13:43:25.26098 127.0.0.1 - - [20/Mar/2022:13:43:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:43:25.26108 - -> /ruby
+2022-03-20_13:43:34.83190 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:43:34.86249 127.0.0.1 - - [20/Mar/2022:13:43:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:43:34.86253 - -> /sidekiq
+2022-03-20_13:43:37.09990 127.0.0.1 - - [20/Mar/2022:13:43:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:43:37.09997 - -> /database
+2022-03-20_13:43:40.26425 127.0.0.1 - - [20/Mar/2022:13:43:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:43:40.26430 - -> /ruby
+2022-03-20_13:43:49.81033 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:43:49.84152 127.0.0.1 - - [20/Mar/2022:13:43:49 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:43:49.84162 - -> /sidekiq
+2022-03-20_13:43:52.09785 127.0.0.1 - - [20/Mar/2022:13:43:51 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:43:52.09813 - -> /database
+2022-03-20_13:43:55.25974 127.0.0.1 - - [20/Mar/2022:13:43:55 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:43:55.25983 - -> /ruby
+2022-03-20_13:44:04.81047 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:44:04.84246 127.0.0.1 - - [20/Mar/2022:13:44:04 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:44:04.84251 - -> /sidekiq
+2022-03-20_13:44:07.09583 127.0.0.1 - - [20/Mar/2022:13:44:06 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:44:07.09626 - -> /database
+2022-03-20_13:44:10.26067 127.0.0.1 - - [20/Mar/2022:13:44:10 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:44:10.26075 - -> /ruby
+2022-03-20_13:44:19.84622 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:44:19.87852 127.0.0.1 - - [20/Mar/2022:13:44:19 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:44:19.87859 - -> /sidekiq
+2022-03-20_13:44:22.09138 127.0.0.1 - - [20/Mar/2022:13:44:21 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:44:22.09149 - -> /database
+2022-03-20_13:44:25.26167 127.0.0.1 - - [20/Mar/2022:13:44:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:44:25.26339 - -> /ruby
+2022-03-20_13:44:34.82509 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:44:34.85607 127.0.0.1 - - [20/Mar/2022:13:44:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:44:34.85617 - -> /sidekiq
+2022-03-20_13:44:37.09253 127.0.0.1 - - [20/Mar/2022:13:44:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:44:37.09264 - -> /database
+2022-03-20_13:44:40.26121 127.0.0.1 - - [20/Mar/2022:13:44:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:44:40.26132 - -> /ruby
+2022-03-20_13:44:49.82526 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:44:49.85494 127.0.0.1 - - [20/Mar/2022:13:44:49 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:44:49.85501 - -> /sidekiq
+2022-03-20_13:44:52.11176 127.0.0.1 - - [20/Mar/2022:13:44:51 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:44:52.11186 - -> /database
+2022-03-20_13:44:55.26003 127.0.0.1 - - [20/Mar/2022:13:44:55 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:44:55.26013 - -> /ruby
+2022-03-20_13:45:04.81581 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:45:04.84830 127.0.0.1 - - [20/Mar/2022:13:45:04 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:45:04.84846 - -> /sidekiq
+2022-03-20_13:45:07.09168 127.0.0.1 - - [20/Mar/2022:13:45:06 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:45:07.09195 - -> /database
+2022-03-20_13:45:10.26031 127.0.0.1 - - [20/Mar/2022:13:45:10 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:45:10.26037 - -> /ruby
+2022-03-20_13:45:19.83299 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:45:19.86422 127.0.0.1 - - [20/Mar/2022:13:45:19 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:45:19.86436 - -> /sidekiq
+2022-03-20_13:45:22.09757 127.0.0.1 - - [20/Mar/2022:13:45:21 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:45:22.09775 - -> /database
+2022-03-20_13:45:25.26023 127.0.0.1 - - [20/Mar/2022:13:45:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:45:25.26037 - -> /ruby
+2022-03-20_13:45:34.81735 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:45:34.84773 127.0.0.1 - - [20/Mar/2022:13:45:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:45:34.84780 - -> /sidekiq
+2022-03-20_13:45:37.09527 127.0.0.1 - - [20/Mar/2022:13:45:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:45:37.09532 - -> /database
+2022-03-20_13:45:40.26107 127.0.0.1 - - [20/Mar/2022:13:45:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:45:40.26133 - -> /ruby
+2022-03-20_13:45:49.84438 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:45:49.87485 127.0.0.1 - - [20/Mar/2022:13:45:49 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:45:49.87494 - -> /sidekiq
+2022-03-20_13:45:52.09169 127.0.0.1 - - [20/Mar/2022:13:45:51 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:45:52.09179 - -> /database
+2022-03-20_13:45:55.26070 127.0.0.1 - - [20/Mar/2022:13:45:55 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:45:55.26078 - -> /ruby
+2022-03-20_13:46:04.84083 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:46:04.87376 127.0.0.1 - - [20/Mar/2022:13:46:04 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:46:04.87393 - -> /sidekiq
+2022-03-20_13:46:07.09623 127.0.0.1 - - [20/Mar/2022:13:46:06 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:46:07.09634 - -> /database
+2022-03-20_13:46:10.26116 127.0.0.1 - - [20/Mar/2022:13:46:10 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:46:10.26127 - -> /ruby
+2022-03-20_13:46:19.82058 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:46:19.85083 127.0.0.1 - - [20/Mar/2022:13:46:19 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:46:19.85092 - -> /sidekiq
+2022-03-20_13:46:22.09402 127.0.0.1 - - [20/Mar/2022:13:46:21 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:46:22.09413 - -> /database
+2022-03-20_13:46:25.26110 127.0.0.1 - - [20/Mar/2022:13:46:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:46:25.26142 - -> /ruby
+2022-03-20_13:46:34.82317 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:46:34.85539 127.0.0.1 - - [20/Mar/2022:13:46:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:46:34.85556 - -> /sidekiq
+2022-03-20_13:46:37.09364 127.0.0.1 - - [20/Mar/2022:13:46:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:46:37.09374 - -> /database
+2022-03-20_13:46:40.26079 127.0.0.1 - - [20/Mar/2022:13:46:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:46:40.26298 - -> /ruby
+2022-03-20_13:46:49.81759 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:46:49.84723 127.0.0.1 - - [20/Mar/2022:13:46:49 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:46:49.84732 - -> /sidekiq
+2022-03-20_13:46:52.08961 127.0.0.1 - - [20/Mar/2022:13:46:51 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:46:52.08965 - -> /database
+2022-03-20_13:46:55.26185 127.0.0.1 - - [20/Mar/2022:13:46:55 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:46:55.26203 - -> /ruby
+2022-03-20_13:47:04.81104 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:47:04.84612 127.0.0.1 - - [20/Mar/2022:13:47:04 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:47:04.84618 - -> /sidekiq
+2022-03-20_13:47:07.09392 127.0.0.1 - - [20/Mar/2022:13:47:06 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:47:07.09409 - -> /database
+2022-03-20_13:47:10.26082 127.0.0.1 - - [20/Mar/2022:13:47:10 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:47:10.26100 - -> /ruby
+2022-03-20_13:47:19.81532 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:47:19.84828 127.0.0.1 - - [20/Mar/2022:13:47:19 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:47:19.84836 - -> /sidekiq
+2022-03-20_13:47:22.09813 127.0.0.1 - - [20/Mar/2022:13:47:21 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:47:22.09823 - -> /database
+2022-03-20_13:47:25.26024 127.0.0.1 - - [20/Mar/2022:13:47:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:47:25.26035 - -> /ruby
+2022-03-20_13:47:34.83314 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:47:34.86417 127.0.0.1 - - [20/Mar/2022:13:47:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:47:34.86425 - -> /sidekiq
+2022-03-20_13:47:37.09346 127.0.0.1 - - [20/Mar/2022:13:47:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:47:37.09372 - -> /database
+2022-03-20_13:47:40.26106 127.0.0.1 - - [20/Mar/2022:13:47:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:47:40.26124 - -> /ruby
+2022-03-20_13:47:49.81520 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:47:49.84599 127.0.0.1 - - [20/Mar/2022:13:47:49 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:47:49.84609 - -> /sidekiq
+2022-03-20_13:47:52.09245 127.0.0.1 - - [20/Mar/2022:13:47:51 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:47:52.09253 - -> /database
+2022-03-20_13:47:55.26067 127.0.0.1 - - [20/Mar/2022:13:47:55 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:47:55.26087 - -> /ruby
+2022-03-20_13:48:04.82606 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:48:04.85777 127.0.0.1 - - [20/Mar/2022:13:48:04 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:48:04.85795 - -> /sidekiq
+2022-03-20_13:48:07.09955 127.0.0.1 - - [20/Mar/2022:13:48:06 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:48:07.09967 - -> /database
+2022-03-20_13:48:10.26128 127.0.0.1 - - [20/Mar/2022:13:48:10 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:48:10.26140 - -> /ruby
+2022-03-20_13:48:19.82000 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:48:19.85153 127.0.0.1 - - [20/Mar/2022:13:48:19 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:48:19.85162 - -> /sidekiq
+2022-03-20_13:48:22.09155 127.0.0.1 - - [20/Mar/2022:13:48:21 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:48:22.09182 - -> /database
+2022-03-20_13:48:25.26060 127.0.0.1 - - [20/Mar/2022:13:48:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:48:25.26074 - -> /ruby
+2022-03-20_13:48:34.82499 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:48:34.85659 127.0.0.1 - - [20/Mar/2022:13:48:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:48:34.85674 - -> /sidekiq
+2022-03-20_13:48:37.09263 127.0.0.1 - - [20/Mar/2022:13:48:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:48:37.09274 - -> /database
+2022-03-20_13:48:40.26211 127.0.0.1 - - [20/Mar/2022:13:48:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:48:40.26413 - -> /ruby
+2022-03-20_13:48:49.81797 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:48:49.84877 127.0.0.1 - - [20/Mar/2022:13:48:49 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:48:49.84897 - -> /sidekiq
+2022-03-20_13:48:52.09468 127.0.0.1 - - [20/Mar/2022:13:48:51 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:48:52.09481 - -> /database
+2022-03-20_13:48:55.26014 127.0.0.1 - - [20/Mar/2022:13:48:55 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:48:55.26026 - -> /ruby
+2022-03-20_13:49:04.81318 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:49:04.84611 127.0.0.1 - - [20/Mar/2022:13:49:04 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:49:04.84619 - -> /sidekiq
+2022-03-20_13:49:07.09379 127.0.0.1 - - [20/Mar/2022:13:49:06 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:49:07.09390 - -> /database
+2022-03-20_13:49:10.26016 127.0.0.1 - - [20/Mar/2022:13:49:10 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:49:10.26026 - -> /ruby
+2022-03-20_13:49:19.81489 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:49:19.84509 127.0.0.1 - - [20/Mar/2022:13:49:19 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:49:19.84517 - -> /sidekiq
+2022-03-20_13:49:22.09128 127.0.0.1 - - [20/Mar/2022:13:49:21 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:49:22.09150 - -> /database
+2022-03-20_13:49:25.26098 127.0.0.1 - - [20/Mar/2022:13:49:25 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:49:25.26108 - -> /ruby
+2022-03-20_13:49:34.81948 Passing 'exists?' command to redis as is; blind passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/sidekiq-6.3.1/lib/sidekiq/api.rb:960:in `block (3 levels) in each')
+2022-03-20_13:49:34.85093 127.0.0.1 - - [20/Mar/2022:13:49:34 UTC] "GET /sidekiq HTTP/1.1" 200 72393
+2022-03-20_13:49:34.85102 - -> /sidekiq
+2022-03-20_13:49:37.09053 127.0.0.1 - - [20/Mar/2022:13:49:36 UTC] "GET /database HTTP/1.1" 200 1253
+2022-03-20_13:49:37.09064 - -> /database
+2022-03-20_13:49:40.26102 127.0.0.1 - - [20/Mar/2022:13:49:40 UTC] "GET /ruby HTTP/1.1" 200 1001
+2022-03-20_13:49:40.26120 - -> /ruby
